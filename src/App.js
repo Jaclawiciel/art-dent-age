@@ -5,6 +5,8 @@ import 'moment/locale/pl';
 import './App.css';
 import AgeToday from "./components/AgeToday";
 import AgePast from "./components/AgePast";
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {TransitionGroup, CSSTransition} from "react-transition-group";
 
 
 class App extends Component {
@@ -21,36 +23,51 @@ class App extends Component {
         this.setState({currentPage: currentPage});
     }
 
-    renderCurrentPage = function() {
+    renderCurrentPage = function () {
         if (this.state.currentPage === 'today') {
-            return <AgeToday />;
+            return <AgeToday/>;
         } else {
-            return <AgePast />;
+            return <AgePast/>;
         }
     };
 
     render() {
         return (
             <div className="app">
-                <header className="header">
-                    <h1 className="header-title">Wiek pacjentów</h1>
-                    <nav className="nav">
-                        <button className={this.state.currentPage === 'today' ? 'nav-btn active' : 'nav-btn'} onClick={() => this.handleNavigation('today')}>Wiek na dzisiaj</button>
-                        <button className={this.state.currentPage === 'past' ? 'nav-btn active' : 'nav-btn'} onClick={() => this.handleNavigation('past')}>Wiek na dzień badania</button>
-                    </nav>
-                </header>
-                <div className="content">
+                <ReactCSSTransitionGroup
+                    transitionName="example"
+                    transitionAppear={true}
+                    transitionAppearTimeout={500}
+                    transitionEnter={true}
+                    transitionLeave={true}
+                    className="animation-container"
+                >
+                    <div className="wrapper">
+                        <header className="header">
+                            <h1 className="header-title">Wiek pacjentów</h1>
+                            <nav className="nav">
+                                <button className={this.state.currentPage === 'today' ? 'nav-btn active' : 'nav-btn'}
+                                        onClick={() => this.handleNavigation('today')}>Wiek na dzisiaj
+                                </button>
+                                <button className={this.state.currentPage === 'past' ? 'nav-btn active' : 'nav-btn'}
+                                        onClick={() => this.handleNavigation('past')}>Wiek na dzień badania
+                                </button>
+                            </nav>
+                        </header>
 
-                    {this.renderCurrentPage()}
-                </div>
+                        <div className="content">
+                            {this.renderCurrentPage()}
+                        </div>
+                    </div>
 
-                <footer className="footer">
-                    © 2019 ARTdent by
-                    <a href="http://jacekgalka.pl?utm_source=artdent&utm_medium=footer-link">
-                        Jacek Gałka
-                        <div className="footer-border"></div>
-                    </a>
-                </footer>
+                    <footer className="footer">
+                        © 2019 ARTdent by
+                        <a href="http://jacekgalka.pl?utm_source=artdent&utm_medium=footer-link">
+                            Jacek Gałka
+                            <div className="footer-border"></div>
+                        </a>
+                    </footer>
+                </ReactCSSTransitionGroup>
             </div>
         )
     }
