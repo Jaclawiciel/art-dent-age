@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/art-dent-age/precache-manifest.4509b786a61c7e11e3c4a10446a5b333.js"
+  "/art-dent-age/precache-manifest.37788449af78afbf23efcd8c84d493c1.js"
 );
 
 self.addEventListener('message', (event) => {
