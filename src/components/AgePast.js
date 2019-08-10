@@ -38,37 +38,39 @@ class AgePast extends Component {
         return (
             <div className="age-past">
                 <h2 className="content-title">Wiek na dzień badania</h2>
-                <div className="dates">
-                    <div className="date-wrapper">
-                        <span className="date-label">Data urodzenia</span>
-                        <Flatpickr
-                            value={patientBirthday}
-                            onChange={patientBirthday => {
-                                this.setState({
-                                    patientBirthday: patientBirthday,
-                                    age: this.calculateAge(patientBirthday, examinationDate)
-                                });
-                            }}
-                        />
+                <div className="date-age-wrapper">
+                    <div className="dates">
+                        <div className="date-wrapper">
+                            <span className="date-label">Data urodzenia</span>
+                            <Flatpickr
+                                value={patientBirthday}
+                                onChange={patientBirthday => {
+                                    this.setState({
+                                        patientBirthday: patientBirthday,
+                                        age: this.calculateAge(patientBirthday, examinationDate)
+                                    });
+                                }}
+                            />
+                        </div>
+                        <div className="date-wrapper">
+                            <span className="date-label">Data badania</span>
+                            <Flatpickr
+                                value={examinationDate}
+                                onChange={examinationDate => {
+                                    this.setState({
+                                        examinationDate: examinationDate,
+                                        age: this.calculateAge(patientBirthday, examinationDate)
+                                    });
+                                }}
+                            />
+                        </div>
                     </div>
-                    <div className="date-wrapper">
-                        <span className="date-label">Data badania</span>
-                        <Flatpickr
-                            value={examinationDate}
-                            onChange={examinationDate => {
-                                this.setState({
-                                    examinationDate: examinationDate,
-                                    age: this.calculateAge(patientBirthday, examinationDate)
-                                });
-                            }}
-                        />
+                    <div className="age">
+                        <div className="age-number">
+                            <CountUp end={age}/>
+                        </div>
+                        <div className="age-text">wiek</div>
                     </div>
-                </div>
-                <div className="age">
-                    <div className="age-number">
-                        <CountUp end={age}/>
-                    </div>
-                    <div className="age-text">wiek</div>
                 </div>
             </div>
         )

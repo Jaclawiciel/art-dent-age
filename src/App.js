@@ -13,7 +13,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            currentPage: 'today'
+            currentPage: 'past'
         };
 
         this.handleNavigation = this.handleNavigation.bind(this);

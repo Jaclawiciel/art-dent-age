@@ -12,6 +12,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+::selection {
+  background: var(--turquoise);
+  text-shadow: none;
+  color: #fff;
+}
+
 html {
   color: var(--fontColor);
 }
@@ -38,6 +44,7 @@ a {
   color: var(--turquoise);
   width: 50%;
   margin: 0 5px;
+  transition: all .20s;
 }
 
 .nav-btn.active {
@@ -67,7 +74,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.10;
+  opacity: 0.08;
   top: 0;
   left: 0;
   bottom: 0;
@@ -103,6 +110,7 @@ a {
   font-weight: 300;
 }
 
+/* Flatpickr */
 .flatpickr-input {
   font-size: 20px;
   -webkit-appearance: none;
@@ -112,6 +120,29 @@ a {
   border-radius: 6px;
   padding: 6px 10px;
   max-width: 170px;
+}
+
+.flatpickr-months,
+.flatpickr-weekdays {
+  background: var(--darkGreen) !important;
+}
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  fill: white !important;
+}
+
+.flatpickr-month,
+.flatpickr-weekday {
+  color: white !important;
+}
+
+.flatpickr-day.today {
+  border-color: var(--darkGreen) !important;
+}
+
+.flatpickr-day.selected {
+  background: var(--darkGreen) !important;
 }
 
 /* AGE */
@@ -205,24 +236,97 @@ html, body, #root, .app, .animation-container {
   transition: opacity .5s ease-in;
 }
 
-.dialog-enter {
-  opacity: 0.01;
-  transform: scale(1.1);
+
+
+/* iPhone SE landscape */
+@media only screen
+and (min-width: 568px) {
+  .date-age-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .date-wrapper {
+    margin: 0;
+  }
+
+  .dates .date-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .age {
+    margin: 0;
+  }
 }
 
-.dialog-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: all 300ms;
+/* iPhone 8 landscape */
+@media only screen
+and (min-width: 667px) {
+
 }
 
-.dialog-exit {
-  opacity: 1;
-  transform: scale(1);
+/* iPhone 8 Plus landscape */
+@media only screen
+and (min-width: 736px) {
+  .app:after {
+    background-size: auto;
+  }
 }
 
-.dialog-exit-active {
-  opacity: 0.01;
-  transform: scale(1.1);
-  transition: all 300ms;
+/* iPhone X landscape */
+@media only screen
+and (min-width: 812px) {
+}
+
+/* iPad */
+@media only screen
+and (min-width: 768px) {
+  .content {
+    margin: 40px;
+  }
+
+  .header {
+    display: flex;
+    border-bottom: 1px solid var(--turquoise);
+    margin: 0;
+    align-items: center;
+    padding: 20px 15px;
+  }
+
+  .header-title {
+    border: none;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .nav {
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  .nav-btn {
+    width: 220px;
+    padding: 12px;
+  }
+
+  .date-age-wrapper {
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+
+  .age {
+    margin-left: 30px;
+  }
+
+  .content .content-title {
+    font-size: 24px;
+  }
+}
+
+/* Desktop */
+@media only screen
+and (min-width: 1024px) {
 }
