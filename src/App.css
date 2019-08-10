@@ -36,6 +36,8 @@ a {
   padding: 6px 10px;
   font-size: 16px;
   color: var(--turquoise);
+  width: 50%;
+  margin: 0 5px;
 }
 
 .nav-btn.active {
@@ -90,6 +92,15 @@ a {
   font-weight: 600;
 }
 
+.date-wrapper {
+  margin-bottom: 15px;
+}
+
+.date-label {
+  display: block;
+  font-weight: 300;
+}
+
 .flatpickr-input {
   font-size: 20px;
   -webkit-appearance: none;
@@ -104,7 +115,7 @@ a {
 .age {
   border: 1px solid var(--turquoise);
   width: 150px;
-  margin: 50px auto 10px;
+  margin: 40px auto 10px;
   padding: 30px 0;
   background: var(--turquoise);
   border-radius: 16px;

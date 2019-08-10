@@ -5,7 +5,6 @@ import 'moment/locale/pl';
 import './App.css';
 import AgeToday from "./components/AgeToday";
 import AgePast from "./components/AgePast";
-import Logo from './components/Logo';
 
 
 class App extends Component {
