@@ -1,15 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ARTdent",
+  "name": "ARTdent - wiek pacjentów",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo-small.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "http://jacekgalka.pl/art-dent-age",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#52989C",
   "background_color": "#ffffff"
 }
