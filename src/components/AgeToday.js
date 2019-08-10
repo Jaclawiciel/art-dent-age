@@ -16,20 +16,17 @@ class AgeToday extends Component {
         let { patientBirthday } = this.state;
         return (
             <div className="age-today">
-                <h4>WIEK NA DZISIAJ</h4>
+                <h2 className="content-title">Wiek na dziś - <span className="date"><Moment format="DD.MM.YYYY"/></span> </h2>
                 <Flatpickr
                     value={patientBirthday}
                     onChange={patientBirthday => { this.setState({patientBirthday}) }}
                 />
-                <h3>
-                    Wiek: <Moment locale="pl" diff={patientBirthday.toString()} unit="years">{new Date()}</Moment>
-                </h3>
-                {/*<p>A dokładniej: <Moment*/}
-                {/*    locale="pl-pl"*/}
-                {/*    date={patientBirthday.toString()}*/}
-                {/*    unit="years"*/}
-                {/*    durationFromNow*/}
-                {/*/></p>*/}
+                <div className="age">
+                    <div className="age-number">
+                        <Moment locale="pl" diff={patientBirthday.toString()} unit="years">{new Date()}</Moment>
+                    </div>
+                    <div className="age-text">Wiek</div>
+                </div>
             </div>
         )
     }
