@@ -24,12 +24,12 @@ class AgeToday extends Component {
                 <h3>
                     Wiek: <Moment locale="pl" diff={patientBirthday.toString()} unit="years">{new Date()}</Moment>
                 </h3>
-                <p>A dokładniej: <Moment
-                    locale="pl-pl"
-                    date={patientBirthday.toString()}
-                    unit="years"
-                    durationFromNow
-                /></p>
+                {/*<p>A dokładniej: <Moment*/}
+                {/*    locale="pl-pl"*/}
+                {/*    date={patientBirthday.toString()}*/}
+                {/*    unit="years"*/}
+                {/*    durationFromNow*/}
+                {/*/></p>*/}
             </div>
         )
     }

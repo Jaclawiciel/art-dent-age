@@ -33,12 +33,12 @@ class AgePast extends Component {
                 <h3>
                     Wiek: <Moment locale="pl" diff={patientBirthday.toString()} unit="years">{examinationDate.toString()}</Moment>
                 </h3>
-                <p>A dokładniej: <Moment
-                    locale="pl-pl"
-                    duration={patientBirthday.toString()}
-                    date={examinationDate.toString()}
-                    unit="years"
-                /></p>
+                {/*<p>A dokładniej: <Moment*/}
+                {/*    locale="pl-pl"*/}
+                {/*    duration={patientBirthday.toString()}*/}
+                {/*    date={examinationDate.toString()}*/}
+                {/*    unit="years"*/}
+                {/*/></p>*/}
             </div>
         )
     }
