@@ -1,8 +1,3 @@
-.flatpickr {
-  display: block;
-  margin: 0 auto;
-}
-
-.age-today {
-  margin-bottom: 80px;
+.nav-btn.active {
+  color: red;
 }
