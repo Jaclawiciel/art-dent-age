@@ -63,7 +63,7 @@ class App extends Component {
                     <footer className="footer">
                         © 2019 ARTdent by
                         <a href="http://jacekgalka.pl?utm_source=artdent&utm_medium=footer-link">
-                            Jacek Gałka
+                             Jacek Gałka
                             <div className="footer-border"></div>
                         </a>
                     </footer>
