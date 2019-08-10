@@ -8,7 +8,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "http://jacekgalka.pl/art-dent-age",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#52989C",
   "background_color": "#ffffff"
