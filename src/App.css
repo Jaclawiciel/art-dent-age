@@ -1,3 +1,8 @@
-p {
-  font-size: 16px;
+.flatpickr {
+  display: block;
+  margin: 0 auto;
+}
+
+.age-today {
+  margin-bottom: 80px;
 }

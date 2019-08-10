@@ -5,36 +5,20 @@ import Flatpickr from 'react-flatpickr'
 import Moment from 'react-moment';
 import 'moment/locale/pl';
 import './App.css';
+import AgeToday from "./components/AgeToday";
+import AgePast from "./components/AgePast";
 
 
 class App extends Component {
   constructor() {
     super();
-
-    this.state = {
-      date: new Date("1996-08-30")
-    };
   }
 
   render() {
-    let { date } = this.state;
     return (
         <div className="app">
-          <Flatpickr
-              value={date}
-              onChange={date => { this.setState({date}) }}
-          />
-          <h1>
-            <h3>
-              Wiek: <Moment diff={date.toString()} unit="years">{new Date()}</Moment>
-            </h3>
-            <p>A dokładniej: <Moment
-                locale="fr"
-                date={date.toString()}
-                unit="years"
-                durationFromNow
-            /></p>
-          </h1>
+            <AgeToday />
+            <AgePast />
         </div>
     )
   }
