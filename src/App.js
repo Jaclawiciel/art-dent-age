@@ -33,7 +33,7 @@ class App extends Component {
         return (
             <div className="app">
                 <header className="header">
-                    <h1 className="header-title">Uzupełnianie wieku pacjentów</h1>
+                    <h1 className="header-title">Wiek pacjentów</h1>
                     <nav className="nav">
                         <button className={this.state.currentPage === 'today' ? 'nav-btn active' : 'nav-btn'} onClick={() => this.handleNavigation('today')}>Wiek na dzisiaj</button>
                         <button className={this.state.currentPage === 'past' ? 'nav-btn active' : 'nav-btn'} onClick={() => this.handleNavigation('past')}>Wiek na dzień badania</button>
