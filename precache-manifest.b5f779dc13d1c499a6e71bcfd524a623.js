@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d486bb780350cdb81f9757e2a86d8d6",
+    "revision": "ac13746b8315ed478e6d73f9ef34ab6a",
     "url": "/art-dent-age/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/art-dent-age/static/css/2.ce41e2b0.chunk.css"
   },
   {
-    "revision": "c8dce871c96f56772b90",
-    "url": "/art-dent-age/static/css/main.e090f2c6.chunk.css"
+    "revision": "31c3d0954c6da070b5d8",
+    "url": "/art-dent-age/static/css/main.32eb0738.chunk.css"
   },
   {
     "revision": "4f8cc4a90a7febe35db4",
     "url": "/art-dent-age/static/js/2.b1091b5a.chunk.js"
   },
   {
-    "revision": "c8dce871c96f56772b90",
+    "revision": "31c3d0954c6da070b5d8",
     "url": "/art-dent-age/static/js/main.a47f2c2e.chunk.js"
   },
   {
