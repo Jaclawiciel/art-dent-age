@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/art-dent-age/static/css/main.2253de77.chunk.css",
-    "main.js": "/art-dent-age/static/js/main.b87714a7.chunk.js",
-    "main.js.map": "/art-dent-age/static/js/main.b87714a7.chunk.js.map",
+    "main.css": "/art-dent-age/static/css/main.10e2dcfd.chunk.css",
+    "main.js": "/art-dent-age/static/js/main.2507e025.chunk.js",
+    "main.js.map": "/art-dent-age/static/js/main.2507e025.chunk.js.map",
     "runtime~main.js": "/art-dent-age/static/js/runtime~main.a03064d8.js",
     "runtime~main.js.map": "/art-dent-age/static/js/runtime~main.a03064d8.js.map",
     "static/css/2.ce41e2b0.chunk.css": "/art-dent-age/static/css/2.ce41e2b0.chunk.css",
     "static/js/2.783c93ba.chunk.js": "/art-dent-age/static/js/2.783c93ba.chunk.js",
     "static/js/2.783c93ba.chunk.js.map": "/art-dent-age/static/js/2.783c93ba.chunk.js.map",
     "index.html": "/art-dent-age/index.html",
-    "precache-manifest.8a6189b48e6a32c7b2dc38107138378c.js": "/art-dent-age/precache-manifest.8a6189b48e6a32c7b2dc38107138378c.js",
+    "precache-manifest.6419702611f70a6204f07394a85041c8.js": "/art-dent-age/precache-manifest.6419702611f70a6204f07394a85041c8.js",
     "service-worker.js": "/art-dent-age/service-worker.js",
     "static/css/2.ce41e2b0.chunk.css.map": "/art-dent-age/static/css/2.ce41e2b0.chunk.css.map",
-    "static/css/main.2253de77.chunk.css.map": "/art-dent-age/static/css/main.2253de77.chunk.css.map",
+    "static/css/main.10e2dcfd.chunk.css.map": "/art-dent-age/static/css/main.10e2dcfd.chunk.css.map",
     "static/media/App.css": "/art-dent-age/static/media/logo.9a2ec625.jpg"
   }
 }
