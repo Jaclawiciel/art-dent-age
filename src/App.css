@@ -6,6 +6,7 @@
   --fontColor: #878787;
   --footerBorderOrange: #F76B1C;
   --footerBorderYellow: #FAD961;
+  --errorColor: #721c24;
 }
 
 * {
@@ -101,17 +102,50 @@ a {
   font-weight: 600;
 }
 
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message {
+  position: relative;
+  color: #721c24;
+  font-size: 14px;
+  opacity: 0;
+  left: -20px;
+  transition: all .5s;
+}
+
+.error-message.show {
+  opacity: 1;
+  left: 0;
+}
+
 .date-wrapper {
   margin-bottom: 16px;
 }
 
-.date-label {
-  display: block;
-  font-weight: 300;
+.reset-button {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--turquoise);
 }
 
-/* Flatpickr */
-.flatpickr-input {
+.input-label {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.or-wrapper {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.input {
   font-size: 20px;
   -webkit-appearance: none;
   border: 1px solid var(--turquoise);
@@ -122,9 +156,14 @@ a {
   max-width: 170px;
 }
 
+/* Flatpickr */
 .flatpickr-months,
-.flatpickr-weekdays {
-  background: var(--darkGreen) !important;
+.flatpickr-weekdays,
+.flatpickr-months .flatpickr-month,
+.flatpickr-monthDropdown-months,
+.flatpickr-weekdaycontainer,
+span.flatpickr-weekday {
+  background: var(--turquoise) !important;
 }
 
 .flatpickr-prev-month,
@@ -138,11 +177,11 @@ a {
 }
 
 .flatpickr-day.today {
-  border-color: var(--darkGreen) !important;
+  border-color: var(--turquoise) !important;
 }
 
 .flatpickr-day.selected {
-  background: var(--darkGreen) !important;
+  background: var(--turquoise) !important;
 }
 
 /* AGE */
@@ -150,23 +189,30 @@ a {
   border: 1px solid var(--turquoise);
   width: 150px;
   margin: 40px auto 10px;
-  padding: 30px 0;
   background: var(--turquoise);
   border-radius: 16px;
   color: #FFF;
   display: flex;
   justify-content: center;
   position: relative;
+  flex-direction: column;
 }
 
 .age .age-number {
   font-size: 40px;
   text-align: center;
+  margin: 10px 0;
 }
 
 .age .age-text {
-  position: absolute;
-  bottom: 5px;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.age .gender-sign {
+  text-align: center;
+  margin-top: 10px;
   font-weight: 200;
 }
 

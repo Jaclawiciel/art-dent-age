@@ -6,14 +6,13 @@ import './App.css';
 import AgeToday from "./components/AgeToday";
 import AgePast from "./components/AgePast";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {TransitionGroup, CSSTransition} from "react-transition-group";
 
 
 class App extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            currentPage: 'past'
+            currentPage: 'today'
         };
 
         this.handleNavigation = this.handleNavigation.bind(this);
@@ -64,7 +63,7 @@ class App extends Component {
                         © 2019 ARTdent by
                         <a href="http://jacekgalka.pl?utm_source=artdent&utm_medium=footer-link">
                              Jacek Gałka
-                            <div className="footer-border"></div>
+                            <div className="footer-border" />
                         </a>
                     </footer>
                 </ReactCSSTransitionGroup>
