@@ -130,6 +130,7 @@ a {
   font-size: 20px;
   font-weight: 500;
   color: var(--turquoise);
+  cursor: pointer;
 }
 
 .input-label {

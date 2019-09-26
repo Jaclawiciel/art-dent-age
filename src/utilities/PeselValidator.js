@@ -43,7 +43,7 @@ class PeselValidator {
         if ((sum % 10) !== 0) {
             return {
                 isValid: false,
-                errorMessage: "Podano nieprawidłowy numer PESEL"
+                errorMessage: "Numer nieprawidłowy"
             };
         }
 

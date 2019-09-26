@@ -3,8 +3,6 @@ import {Component} from 'react'
 import Flatpickr from "react-flatpickr";
 import Moment from "react-moment";
 import CountUp from 'react-countup';
-import InputError from "./InputError";
-import PeselValidator from "../utilities/PeselValidator";
 import PeselInput from "./Inputs/PeselInput";
 
 class AgeToday extends Component {
