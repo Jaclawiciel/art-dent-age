@@ -41,9 +41,9 @@ class PeselInput extends Component {
                         onChange={this.handlePeselInput}
                     />
                     <span className="reset-button" onClick={() => {
-                        this.setState({pesel: ""});
+                        this.setState({pesel: "", peselErrorMessage: ""});
                         this.props.setPatientGender("");
-                    }}>X</span>
+                    }}>x</span>
                 </div>
                 <InputError errorMessage={peselErrorMessage} />
             </div>
